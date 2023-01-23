@@ -4,7 +4,7 @@ import React from "react";
 function CustomButton({ type, buttonText, icon, btnNext, customCss, pitcher }) {
   return (
     <button type={type} className={customCss} onClick={btnNext}>
-      {icon}&nbsp;&nbsp;
+      {icon}
       {buttonText}
       {pitcher}
     </button>

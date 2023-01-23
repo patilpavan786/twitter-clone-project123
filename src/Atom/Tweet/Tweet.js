@@ -18,7 +18,7 @@ function Tweet() {
 
   function Submite() {
     setIsOpen(true);
-    
+    alert("hello")
   }
   return (
     <>

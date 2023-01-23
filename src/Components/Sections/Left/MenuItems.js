@@ -73,7 +73,7 @@ function LeftSec() {
                 onClose={handleClose}
                 // bodyStyle={{ margin: 0, padding: 0 }}
                 style={{
-                  marginLeft: "45px",
+                  background: "rgba(91, 112, 131, 0.4)",
                   fontSize: "15px",
                   lineHeight: "40px",
                 }}

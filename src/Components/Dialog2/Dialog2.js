@@ -1,31 +1,29 @@
-import Dialog from "@mui/material/Dialog";
-import CustomButton from "../../Atom/Button/CustomButton";
-import style from "./Dialog2.module.css";
-import React from "react";
+import { Button, Popover } from 'antd';
+import { useState } from 'react';
 
+import style from "./Dialog2.module.css"
 
+const Dialog2 = (props) => {
+  const [open, setOpen] = useState(false);
+  // const[IsNotIntrested,setIsNotIntrested]=useState(false)
 
-function Dialog2(props) {
-
-  const { onClose, selectedValue, open } = props;
-  const handleClose = () => {
-    onClose(selectedValue);
+  // function Hello(e) {
+  //  alert("hllo")
+  //  setIsNotIntrested(true)
+  // }
+  const handleOpenChange = (newOpen) => {
+    setOpen(newOpen);
   };
- 
   return (
-    <Dialog onClose={handleClose} open={open}>
-      <div className={style.container}>
-        <CustomButton
-          buttonText="Not intrestd in this "
-          customCss={style.button}
-        />
-        <CustomButton
-         
-          buttonText="block"
-          customCss={style.button}
-        />
-      </div>
-    </Dialog>
+    <Popover
+      content={<a onClick={props.onClick}> Is Not Intrested</a>}
+      title="block"
+      trigger="click"
+      open={open}
+      onOpenChange={handleOpenChange}
+    >
+      <Button className={style.btn} type="primary">...</Button>
+    </Popover>
   );
-}
+};
 export default Dialog2;

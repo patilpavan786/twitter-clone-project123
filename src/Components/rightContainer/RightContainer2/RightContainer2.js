@@ -3,7 +3,6 @@ import { Avatar } from "@mui/material";
 import style from "./RightContainer2.module.css";
 import CustomButton from "../../../Atom/Button/CustomButton";
 
-
 function Righthomebox2() {
   const handleClick = (id) => {
     const updatedFollowContainer = followContainer.map((item) => {
@@ -71,6 +70,13 @@ function Righthomebox2() {
             </div>
           );
         })}
+        <div className={style.btn2}>
+          <CustomButton
+            className={style.btn2}
+            buttonText={"see more"}
+            btnNext={() => alert("see more things")}
+          />
+        </div>
       </div>
     </div>
   );
