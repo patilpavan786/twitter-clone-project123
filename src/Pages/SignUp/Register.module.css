@@ -98,10 +98,12 @@ padding-left: 0px;
 .signupbtn p{
     font-size: 13px;
     color: gray;
+    padding-top: 1rem;
 }
 .txt2{
     color: white;
     font-weight: 400;
+    padding-top: 2rem;
 }
 .input1{
     width: 438px;
