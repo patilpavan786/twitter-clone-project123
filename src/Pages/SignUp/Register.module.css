@@ -71,6 +71,7 @@
     border-radius: 1.5rem;
     border: none;
     outline: none;
+    margin-top: 1.5rem;
     font-size: 18px;
   
 }
@@ -81,7 +82,7 @@
 
 }
 .toggle h6{
-    margin-left: 20rem;
+    margin-left: 18.5rem;
     margin-top: 0.5rem; 
     font-size: 15px;
     cursor: pointer;
@@ -109,6 +110,7 @@ padding-left: 0px;
     color: white;
     border: 1px gray solid; 
     border-radius: 0.3rem ;
+    margin-bottom: 1rem;
     
 }
 .input2{
@@ -118,4 +120,5 @@ padding-left: 0px;
     color: white;
     border: 1px gray solid;
     border-radius: 0.3rem;
+    margin-bottom: 1rem;
 }

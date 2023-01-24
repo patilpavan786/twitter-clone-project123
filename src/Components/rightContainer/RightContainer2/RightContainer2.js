@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Avatar } from "@mui/material";
 import style from "./RightContainer2.module.css";
 import CustomButton from "../../../Atom/Button/CustomButton";
+import VerifiedIcon from '@mui/icons-material/Verified';
 
 function Righthomebox2() {
   const handleClick = (id) => {
@@ -54,7 +55,7 @@ function Righthomebox2() {
               <div className={style.img}>
                 <h3>
                   {menu.text}
-                  <span style={{ color: "blue" }}> {menu.tag} </span>
+                  <span style={{ color: "blue" }}> {menu.tag} </span><VerifiedIcon style={{color:"blue",fontSize:"20px"}}/>
                 </h3>
                 <h6>{menu.text2}</h6>
               </div>

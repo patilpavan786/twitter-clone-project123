@@ -18,6 +18,7 @@ import { isTweetPost } from "../../Recoil/Atom1/Atom";
 
 export default function TwitterPost() {
   const[post,setPost]=useState(tweetPosts)
+  const [likesCount, setLikesCount] = useState(0);
   //const[lpost,setLpost]=useState(tweetPosts.length)
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
  useEffect(() => {
@@ -34,7 +35,10 @@ function  fetchData()
   {
     setPost(tweetPosts)
   }
-  
+
+  function handleLike() {
+    setLikesCount(likesCount + 1);
+  }
  
 
   return (
@@ -54,7 +58,7 @@ function  fetchData()
                   
                 </span>
                 <h4>{data.handlerName}</h4>
-                <h6>{data.tweetText}</h6>
+                <h4>{data.tweetText}</h4>
               </div>
             </div>
 
@@ -75,7 +79,7 @@ function  fetchData()
                     <SyncIcon />
                   </span>
                   <span>
-                    {data.likesCount}
+                    {data.likesCount}{likesCount}
                     <FavoriteBorderIcon />
                   </span>
                   <span>
