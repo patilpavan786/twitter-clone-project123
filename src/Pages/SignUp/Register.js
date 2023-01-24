@@ -36,13 +36,7 @@ function Register() {
   const [passwordError, setPasswordError] = useState("");
   const setLoginStatus = useSetRecoilState(isLoginAtom);
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   if (localStorage.getItem("user")) {
-  //     let data = JSON.parse(localStorage.getItem("user"));
-  //     setData(data);
-  //     console.log(data);
-  //   }
-  // }, []);
+
 
   function Form() {
     Setform(true);

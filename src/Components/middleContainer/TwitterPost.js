@@ -10,8 +10,31 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
-function TwitterPost() {
-  const post = tweetPosts;
+
+import { useState,useEffect } from "react";
+import { useRecoilState } from "recoil";
+import { isTweetPost } from "../../Recoil/Atom1/Atom";
+
+
+export default function TwitterPost() {
+  const[post,setPost]=useState(tweetPosts)
+  //const[lpost,setLpost]=useState(tweetPosts.length)
+  const[newPost,setNewPost] = useRecoilState(isTweetPost);
+ useEffect(() => {
+  fetchData()
+  
+  },[newPost]);
+
+function  fetchData()
+  {
+    setPost(tweetPosts)
+  }
+ 
+  function  fetchData()
+  {
+    setPost(tweetPosts)
+  }
+  
  
 
   return (
@@ -22,13 +45,16 @@ function TwitterPost() {
             <div className={style.container1}>
               <div>
                 <Avatar className={style.avatar} src={data.tweetPic} />
+               
               </div>
 
               <div className={style.innercontainer}>
                 <span className={style.text}>
                   <h3>{data.name}<VerifiedIcon style={{color:"blue"}}/></h3>
+                  
                 </span>
                 <h4>{data.handlerName}</h4>
+                <h6>{data.tweetText}</h6>
               </div>
             </div>
 
@@ -66,4 +92,4 @@ function TwitterPost() {
     </>
   );
 }
-export default TwitterPost;
+// TwitterPost;
