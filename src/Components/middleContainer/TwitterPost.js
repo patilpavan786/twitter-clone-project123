@@ -13,7 +13,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 
 import { useState,useEffect } from "react";
 import { useRecoilState } from "recoil";
-import { isTweetPost } from "../../Recoil/Atom1/Atom";
+import { isTweetPost ,userProfile} from "../../Recoil/Atom1/Atom";
 
 
 export default function TwitterPost() {
@@ -21,6 +21,7 @@ export default function TwitterPost() {
   const [likesCount, setLikesCount] = useState(0);
   //const[lpost,setLpost]=useState(tweetPosts.length)
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
+  const[newProfile,setNewProfile] = useRecoilState(userProfile);
  useEffect(() => {
   fetchData()
   
@@ -39,6 +40,10 @@ function  fetchData()
   function handleLike() {
     setLikesCount(likesCount + 1);
   }
+
+  function handleUserProfile() {
+    setNewProfile()
+  }
  
 
   return (
@@ -47,7 +52,8 @@ function  fetchData()
         return (
           <div className={style.wrapper}>
             <div className={style.container1}>
-              <div>
+              <div >
+              onClick={handleUserProfile }
                 <Avatar className={style.avatar} src={data.tweetPic} />
                
               </div>

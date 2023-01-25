@@ -17,17 +17,12 @@ function ProfileSection() {
         <p onClick={()=> nevigate("/") }><WestIcon /></p>
         <h2>{Data.Name}</h2>
       </div>
-
-      <div className={style.container}>
-        <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202211/elon-2_2_0-sixteen_nine.jpg" />
-      </div>
-
+        <img className={style.container} src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202211/elon-2_2_0-sixteen_nine.jpg" />
       <div>
         <span className={style.Avatarsection}>
           <img
             className={style.img}
-            src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202211/elon-2_2_0-sixteen_nine.jpg"
-          />
+            src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202211/elon-2_2_0-sixteen_nine.jpg"/>
           <CustomButton customCss={style.btn} buttonText={"Edit profile"} />
         </span>
       </div>

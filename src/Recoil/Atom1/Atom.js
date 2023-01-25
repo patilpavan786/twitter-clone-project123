@@ -11,3 +11,10 @@ export const isTweetPost = atom({
   key: "isPost",
   default: 0,
 });
+
+
+export const userProfile = atom({
+  key: "userProfile",
+  default: [],
+});
+
