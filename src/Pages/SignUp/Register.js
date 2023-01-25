@@ -37,7 +37,6 @@ function Register() {
   const setLoginStatus = useSetRecoilState(isLoginAtom);
   const navigate = useNavigate();
 
-
   function Form() {
     Setform(true);
   }

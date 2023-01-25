@@ -15,17 +15,20 @@ import { VscBellDot } from "react-icons/vsc";
 import { Avatar } from "@mui/material";
 import CustomButton2 from "../../../Atom/Button/CustomButton2";
 import DialogBox from "../../Dialog/DialogBox";
-// import User from "./User";
+import { useNavigate } from "react-router-dom";
+
 
 function LeftSec() {
+  const nevigate = useNavigate();
+  let Data = JSON.parse(localStorage.getItem("user0"));
   const menu = [
-    { id: 1, icon: <FaHouseUser />, Name: "Home" },
+    { id: 1, icon: <FaHouseUser />, Name: <p onClick={()=> nevigate("/") }>Home</p> },
     { id: 2, icon: <FaHashtag />, Name: "Explore" },
     { id: 3, icon: <VscBellDot />, Name: "Notifications" },
     { id: 4, icon: <HiOutlineMail />, Name: "Message" },
     { id: 5, icon: <BsBookmark />, Name: "Bookmarks" },
     { id: 6, icon: <TbFileText />, Name: "Lists" },
-    { id: 7, icon: <BsPerson />, Name: "Profile" },
+    { id: 7, icon: <BsPerson />, Name: <p onClick={()=> nevigate("/Profile") }>Profile</p> },
     { id: 8, icon: <CgMoreO />, Name: "More" },
   ];
   const [isOpen, SetisOpen] = useState(false);
@@ -49,7 +52,8 @@ function LeftSec() {
         <div className={style.innerContainer}>
           <div className={style.innerContainer2}>
             <div className={style.logo}>
-              <FaTwitter />
+             
+              <p onClick={()=> nevigate("/") }> <FaTwitter /></p>
             </div>
 
             {menu.map((menu) => {
@@ -90,8 +94,8 @@ function LeftSec() {
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Virat_Kohli_portrait.jpg/725px-Virat_Kohli_portrait.jpg"
                 />
               }
-              text={"Unknown"}
-              text2={"Unknown@gmail.com"}
+              text={Data.Name}
+              text2={Data.Email}
               button={handleOpen}
               customCss={style.button2}
             />

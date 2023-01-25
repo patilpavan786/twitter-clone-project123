@@ -7,6 +7,7 @@ import { isLoginAtom } from "../../Recoil/Atom1/Atom";
 
 
 function DialogBox(props) {
+  
 
   const setLoginStatus = useSetRecoilState(isLoginAtom);
   const { onClose, selectedValue, open } = props;

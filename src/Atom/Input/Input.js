@@ -6,6 +6,7 @@ function Input(props) {
   return (
     <div>
       <input
+      type={props.type}
         className={props.className}
         placeholder={props.placeholder}
         onChange={(e) => props.handleOnchange(e.target.value)}
