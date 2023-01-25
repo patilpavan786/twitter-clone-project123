@@ -91,7 +91,7 @@ function LeftSec() {
               picture={
                 <Avatar
                   alt="Remy Sharp"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Virat_Kohli_portrait.jpg/725px-Virat_Kohli_portrait.jpg"
+                  src="https://tinypng.com/images/social/website.jpg"
                 />
               }
               text={Data.Name}

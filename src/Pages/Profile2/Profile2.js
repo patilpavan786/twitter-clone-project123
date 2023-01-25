@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import MenuItems from "../../Components/Sections/Left/MenuItems"
-import ProfileSection from '../../Components/Sections/ProfileSection/ProfileSection'
+import Unknownuser from '../../Components/Sections/ProfileSection/Unknownuser'
 import RightSide from '../../Components/Sections/Right/RightSide'
 import style from "./Profile2.module.css"
 import { useRecoilValue } from "recoil";
@@ -8,14 +8,14 @@ import { isLoginAtom } from "../../Recoil/Atom1/Atom";
 import { useNavigate } from "react-router-dom";
 function Profile2() {
 
-    // const isUserLoggedIn = useRecoilValue(isLoginAtom);
-    // const nevigate = useNavigate();
+    const isUserLoggedIn = useRecoilValue(isLoginAtom);
+    const nevigate = useNavigate();
   
-    // useEffect(() => {
-    //   if (!isUserLoggedIn) {
-    //     nevigate("/Login");
-    //   }
-    // });
+    useEffect(() => {
+      if (!isUserLoggedIn) {
+        nevigate("/Login");
+      }
+    });
 
   return (
     <div>
@@ -24,7 +24,7 @@ function Profile2() {
         <MenuItems />
       </div>
       <div className={style.middleContainer}>
-      <ProfileSection />
+      <Unknownuser />
       </div>
       <div className={style.rightContainer}>
         <RightSide />

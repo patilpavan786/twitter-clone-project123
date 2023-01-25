@@ -74,7 +74,7 @@ function WhatHappening() {
             <div className={style.bottom}>
               {Icons.map((menu) => {
                 return (
-                  <ul className={style.icons}>
+                  <ul className={style.icons}key={menu.id}>
                     <li>{menu.icon}</li>
                   </ul>
                 );

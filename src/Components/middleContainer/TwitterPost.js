@@ -14,10 +14,12 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import { useState,useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { isTweetPost ,userProfile} from "../../Recoil/Atom1/Atom";
+import { useNavigate } from "react-router-dom";
 
 
 export default function TwitterPost() {
   const[post,setPost]=useState(tweetPosts)
+  const nevigate = useNavigate();
   const [likesCount, setLikesCount] = useState(0);
   //const[lpost,setLpost]=useState(tweetPosts.length)
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
@@ -42,8 +44,20 @@ function  fetchData()
   }
 
   function handleUserProfile() {
-    setNewProfile()
+    //setNewProfile()
+    alert("kkkk")
   }
+  
+ function xyz (dataName)  {
+    console.log(dataName);
+   //console.log(dataPic);
+    setNewProfile(dataName)
+    nevigate("/Profile2")
+    
+    
+    
+   
+  };
  
 
   return (
@@ -52,9 +66,25 @@ function  fetchData()
         return (
           <div className={style.wrapper}>
             <div className={style.container1}>
-              <div >
-              onClick={handleUserProfile }
-                <Avatar className={style.avatar} src={data.tweetPic} />
+              <div  onClick={ ()=>xyz(({
+                name  : data.name,
+                handlerName : data.handlerName  ,
+                organization : data.organization,
+                tweetText : data.tweetText,
+                tweetPic : data.tweetPic,
+              
+                tweetCount : data.tweetCount,
+                retweetCount : data.retweetCount,
+                likesCount : data.likesCount,
+                viewsCount : data.viewsCount,
+                followers : data.followers,
+                followings : data.followings,
+              
+                
+                
+              } )) } >
+              
+                <Avatar   className={style.avatar} src={data.tweetPic} />
                
               </div>
 
@@ -102,4 +132,3 @@ function  fetchData()
     </>
   );
 }
-// TwitterPost;

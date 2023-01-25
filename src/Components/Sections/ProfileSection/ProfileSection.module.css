@@ -29,7 +29,7 @@ border: 1px white solid;
 }
 .Avatarsection{
     display: flex;
-    gap: 18rem;
+    gap: 20rem;
 }
 .img{
    width: 8rem;

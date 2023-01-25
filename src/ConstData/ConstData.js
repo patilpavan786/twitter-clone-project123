@@ -10,10 +10,53 @@ export const tweetPosts = [
         tweetCount : 100,
         retweetCount : 100 ,
         likesCount : 100,
-        viewsCount : '102k',
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ]
     },
     {
         id:1,
@@ -29,7 +72,51 @@ export const tweetPosts = [
         hastags : ['#wildLife','#photoGraphy'],
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:2,
@@ -62,7 +149,51 @@ export const tweetPosts = [
         hastags : ['#sports','#Winners'],
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:4,
@@ -78,7 +209,51 @@ export const tweetPosts = [
         hastags : ['#HockeyLover' , '#Hockey' , '#Team India'],
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
         
 
     } ,
@@ -97,7 +272,51 @@ export const tweetPosts = [
         viewsCount : '17k',
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:6,
@@ -114,7 +333,51 @@ export const tweetPosts = [
         hastags : ['#Freedom Fighter','#India'],
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:7,
@@ -132,7 +395,51 @@ export const tweetPosts = [
         hastags: ['#Electronics','#iphone'],
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:8,
@@ -150,7 +457,51 @@ export const tweetPosts = [
         refLink : 'https://twitter.com/ippittipapitti',
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:9,
@@ -167,7 +518,51 @@ export const tweetPosts = [
         refLink : 'https://dainik-b.in/ekPIEaD5Jwb',
         followers : 200,
         followings : 400,
-        joinedDate : '22 dec 2022'
+        joinedDate : '22 dec 2022',
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
     },
     {
         id:10,
@@ -184,31 +579,50 @@ export const tweetPosts = [
         followers : 200,
         followings : 400,
         joinedDate : '22 dec 2022' ,
-        // tweetData : [
-        //     {
-        //         name : '',
-        //         handlerName : '',
-        //         tweetText : '',
-        //         tweetPic
-        //     } ,
-        //       {
-        //         name : '',
-        //         handlerName : '',
-        //         tweetText : '',
-        //         tweetPic
-        //     },
-        //       {
-        //         name : '',
-        //         handlerName : '',
-        //         tweetText : '',
-        //         tweetPic
-        //     },
-        //       {
-        //         name : '',
-        //         handlerName : '',
-        //         tweetText : '',
-        //         tweetPic
-        //     }
-        // ]
+        tweets : [
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            },
+            {
+                tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+                tweetPic : 'https://lh3.googleusercontent.com/8ygpNx4Er1H9LmB-D8W7cBi-qsvcDSDlWw2CVIk5bHFM77q6a46V0GNxSzopAUtvLKIApDTW7RKnrJ7m7Yp4obN1s23V3dRMrYLwvz5GJc_gu1N-M8tGkyhFYGf40nwZCg7jbgGa1g=w1920-h1080',
+                tweetCount : 100,
+                retweetCount : 100 ,
+                likesCount : 100,
+                viewsCount : '102k',
+                TweetReplies : [
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+                    {
+                        name : '',
+                        handlerName : '',
+                        tweetReplyText : ''
+                    },
+
+                ]
+            }
+        ],
+
     }
 ]

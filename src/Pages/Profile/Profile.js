@@ -8,14 +8,14 @@ import { isLoginAtom } from "../../Recoil/Atom1/Atom";
 import { useNavigate } from "react-router-dom";
 function Profile() {
 
-    // const isUserLoggedIn = useRecoilValue(isLoginAtom);
-    // const nevigate = useNavigate();
+    const isUserLoggedIn = useRecoilValue(isLoginAtom);
+    const nevigate = useNavigate();
   
-    // useEffect(() => {
-    //   if (!isUserLoggedIn) {
-    //     nevigate("/Login");
-    //   }
-    // });
+    useEffect(() => {
+      if (!isUserLoggedIn) {
+        nevigate("/Login");
+      }
+    });
 
   return (
     <div>
