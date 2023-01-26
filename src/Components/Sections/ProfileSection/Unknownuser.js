@@ -7,19 +7,28 @@ import { useNavigate } from "react-router-dom";
 import {userProfile} from "../../../Recoil/Atom1/Atom";
 // import { useRecoilState } from "recoil";
 import { useRecoilValue } from "recoil";
+import { Avatar } from "@mui/material";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import SyncIcon from "@mui/icons-material/Sync";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import PollIcon from "@mui/icons-material/Poll";
+import UploadIcon from "@mui/icons-material/Upload";
+import VerifiedIcon from '@mui/icons-material/Verified';
+import style2 from "./Unknownuser.module.css"
 
 function ProfileSection() {
    const nevigate = useNavigate();
    const unknownProfileData=useRecoilValue(userProfile)
-  console.log(unknownProfileData.tweetPic)
+   const tweets = unknownProfileData.tweets
+ 
 
-  
  
   return (
+    <>
     <div className={style.wrapper}>
       <div className={style.feed__header}>
         <p onClick={()=> nevigate("/") }><WestIcon /></p>
-        <h2>{unknownProfileData.Name}</h2>
+        <h2>{unknownProfileData.name}</h2>
       </div>
         <img className={style.container} src={unknownProfileData.tweetPic} />
       <div>
@@ -32,13 +41,77 @@ function ProfileSection() {
           <CustomButton customCss={style.btn} buttonText={"Edit profile"} />
         </span>
       </div>
-
      <div className={style.textcontaint}>
-        <h4>{`${"Name:-"}${unknownProfileData.Name}`}</h4>
-        <h5>{`${"@"}${unknownProfileData.Email}`}</h5>
-        <h5>{`${"Mob no:-"}${unknownProfileData.Phone}`}</h5>
+        <h4>{`${"Name:-"}${unknownProfileData.name}`}</h4>
+        <h5>{`${"@"}${unknownProfileData.handlerName}`}</h5>
+        <h5>{`${"tweetCount:-"}${unknownProfileData.tweetCount}`}</h5>
+        <h5>{`${"likescount:-"}${unknownProfileData.likesCount}`}</h5>
+        <h5>{`${"followers:-"}${unknownProfileData.followers}`}</h5>
+         <h5>{`${"followings:-"}${unknownProfileData.followings}`}</h5>
   </div>
     </div>
+ <div>
+ {tweets && tweets.length > 0
+              ? tweets.map((x) => {
+        return (
+          <>
+
+            <div key={x.id}>
+     
+
+            <div className={style2.wrapper}>
+            <div className={style2.container1}>
+              <div >
+              
+                <Avatar   className={style2.avatar} src={x.tweetPic} />
+               
+              </div>
+
+              <div className={style2.innercontainer}>
+                <span className={style2.text}>
+                  <h3>{unknownProfileData.name}<VerifiedIcon style={{color:"blue"}}/></h3>
+                </span>
+                <p>{x.tweetText}</p>
+              </div>
+            </div>
+
+            <div className={style2.img}>
+              <img
+                style={{ width: "30rem", height: "30rem",borderRadius:"15px" }}
+                alt="picture"
+                src={x.tweetPic}
+              />
+            </div>
+            <div className={style2.icons}>
+                  <span>
+                    {x.tweetCount}
+                    <ChatBubbleOutlineIcon />
+                  </span>
+                  <span>
+                    {x.retweetCount}
+                    <SyncIcon />
+                  </span>
+                  <span>
+                    {x.likesCount}
+                    <FavoriteBorderIcon />
+                  </span>
+                  <span>
+                    {x.viewsCount}
+                    <PollIcon />
+                  </span>
+
+                  <UploadIcon />
+                </div>
+          </div>
+
+
+            </div>
+          </>
+        );
+      }) :<>{alert("please wait")}</>
+    }
+ </div>
+    </>
   );
 }
 

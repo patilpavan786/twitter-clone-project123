@@ -33,20 +33,7 @@ function  fetchData()
   {
     setPost(tweetPosts)
   }
- 
-  function  fetchData()
-  {
-    setPost(tweetPosts)
-  }
 
-  function handleLike() {
-    setLikesCount(likesCount + 1);
-  }
-
-  function handleUserProfile() {
-    //setNewProfile()
-    alert("kkkk")
-  }
   
  function xyz (dataName)  {
     console.log(dataName);
@@ -79,7 +66,7 @@ function  fetchData()
                 viewsCount : data.viewsCount,
                 followers : data.followers,
                 followings : data.followings,
-              
+                tweets : data.tweets
                 
                 
               } )) } >

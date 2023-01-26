@@ -4,7 +4,7 @@ import style from "./ProfileSection.module.css";
 import WestIcon from "@mui/icons-material/West";
 import CustomButton from "../../../Atom/Button/CustomButton";
 import { useNavigate } from "react-router-dom";
-import RightContainer2 from "../../rightContainer/RightContainer2/RightContainer2"
+// import RightContainer2 from "../../rightContainer/RightContainer2/RightContainer2"
 
 function ProfileSection() {
    const nevigate = useNavigate();
@@ -37,8 +37,8 @@ function ProfileSection() {
         <h5>likesCount :- 154 likes</h5>
       </div>
     </div>
-    <RightContainer2
-    />
+    {/* <RightContainer2
+    /> */}
     </>
   );
 }
