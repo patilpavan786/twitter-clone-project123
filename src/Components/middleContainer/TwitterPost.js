@@ -3,25 +3,21 @@ import React from "react";
 import style from "./TwitterPost.module.css";
 
 import { Avatar } from "@mui/material";
-import { tweetPosts } from "../../ConstData/ConstData";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SyncIcon from "@mui/icons-material/Sync";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
-
 import { useState,useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { isTweetPost ,userProfile} from "../../Recoil/Atom1/Atom";
 import { useNavigate } from "react-router-dom";
-
+import { tweetPosts } from "../../ConstData/ConstData";
 
 export default function TwitterPost() {
   const[post,setPost]=useState(tweetPosts)
   const nevigate = useNavigate();
-  const [likesCount, setLikesCount] = useState(0);
-  //const[lpost,setLpost]=useState(tweetPosts.length)
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
   const[newProfile,setNewProfile] = useRecoilState(userProfile);
  useEffect(() => {
@@ -34,16 +30,10 @@ function  fetchData()
     setPost(tweetPosts)
   }
 
-  
  function xyz (dataName)  {
-    console.log(dataName);
-   //console.log(dataPic);
     setNewProfile(dataName)
     nevigate("/Profile2")
-    
-    
-    
-   
+
   };
  
 
@@ -102,7 +92,7 @@ function  fetchData()
                     <SyncIcon />
                   </span>
                   <span>
-                    {data.likesCount}{likesCount}
+                    {data.likesCount}
                     <FavoriteBorderIcon />
                   </span>
                   <span>

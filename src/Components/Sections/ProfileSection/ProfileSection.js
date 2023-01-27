@@ -29,7 +29,7 @@ function ProfileSection() {
         </span>
       </div>
 
-      <div className={style.textcontaint}>
+      <div key={Data.id} className={style.textcontaint}>
         <h4>{`${"Name:-"}${Data.Name}`}</h4>
         <h5>{`${"@"}${Data.Email}`}</h5>
         <h5>{`${"Mob no:-"}${Data.Phone}`}</h5>

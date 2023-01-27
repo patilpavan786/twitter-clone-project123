@@ -1,12 +1,11 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import style from "./ProfileSection.module.css";
 // import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import WestIcon from "@mui/icons-material/West";
 import CustomButton from "../../../Atom/Button/CustomButton";
 import { useNavigate } from "react-router-dom";
-import {userProfile} from "../../../Recoil/Atom1/Atom";
-// import { useRecoilState } from "recoil";
-import { useRecoilValue } from "recoil";
+import {userProfile,isTweet,userTweet} from "../../../Recoil/Atom1/Atom";
+import { useRecoilValue ,useRecoilState} from "recoil";
 import { Avatar } from "@mui/material";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SyncIcon from "@mui/icons-material/Sync";
@@ -15,17 +14,39 @@ import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
 import style2 from "./Unknownuser.module.css"
-
+// import {tweetPosts} from "../../../ConstData/ConstData"
 function ProfileSection() {
    const nevigate = useNavigate();
    const unknownProfileData=useRecoilValue(userProfile)
    const tweets = unknownProfileData.tweets
- 
+  //  const[newPost,setNewPost] = useRecoilState(isTweet);
+  // const[newProfile,setNewProfile] = useRecoilState(userTweet);
+  // const[post,setPost]=useState(tweetPosts)
+  // console.log(...post)
+//  useEffect(() => {
+//   fetchData()
+  
+//   },[newPost]);
 
- 
+// function  fetchData()
+//   {
+//     setPost(tweetPosts)
+//   }
+
+//  function xyz (dataName)  {
+//     setNewProfile(dataName)
+//     nevigate("/Profile2")
+
+//   };
   return (
     <>
-    <div className={style.wrapper}>
+    <div className={style.wrapper}  
+    
+    // onClick={ ()=>xyz(({
+
+      
+    // } )) }
+    >
       <div className={style.feed__header}>
         <p onClick={()=> nevigate("/") }><WestIcon /></p>
         <h2>{unknownProfileData.name}</h2>
