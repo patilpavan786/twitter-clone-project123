@@ -4,8 +4,8 @@ import style from "./ProfileSection.module.css";
 import WestIcon from "@mui/icons-material/West";
 import CustomButton from "../../../Atom/Button/CustomButton";
 import { useNavigate } from "react-router-dom";
-import {userProfile,isTweet,userTweet} from "../../../Recoil/Atom1/Atom";
-import { useRecoilValue ,useRecoilState} from "recoil";
+import {userProfile,userTweet,userTweetProfile} from "../../../Recoil/Atom1/Atom";
+import { useRecoilValue ,useSetRecoilState} from "recoil";
 import { Avatar } from "@mui/material";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SyncIcon from "@mui/icons-material/Sync";
@@ -14,11 +14,17 @@ import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
 import style2 from "./Unknownuser.module.css"
+
 // import {tweetPosts} from "../../../ConstData/ConstData"
 function ProfileSection() {
    const nevigate = useNavigate();
    const unknownProfileData=useRecoilValue(userProfile)
+   const replyTweetPost=useSetRecoilState(userTweet)
+   const replyProfileDetails=useSetRecoilState(userTweetProfile)
    const tweets = unknownProfileData.tweets
+   
+   const tweetsReply=unknownProfileData.tweets.TweetReplies
+   console.log(tweets )
   //  const[newPost,setNewPost] = useRecoilState(isTweet);
   // const[newProfile,setNewProfile] = useRecoilState(userTweet);
   // const[post,setPost]=useState(tweetPosts)
@@ -38,6 +44,12 @@ function ProfileSection() {
 //     nevigate("/Profile2")
 
 //   };
+
+function forReply(takeData)
+{
+  replyTweetPost(takeData)
+  nevigate("/Tweetpage")
+}
   return (
     <>
     <div className={style.wrapper}  
@@ -72,15 +84,39 @@ function ProfileSection() {
   </div>
     </div>
  <div>
- {tweets && tweets.length > 0
+ { tweets && tweets.length > 0
               ? tweets.map((x) => {
+              
+
         return (
           <>
-
+          
             <div key={x.id}>
      
 
-            <div className={style2.wrapper}>
+            <div className={style2.wrapper} onClick={()=>forReply(({
+
+
+name:unknownProfileData.name,
+id:x.id,
+tweetText : x.tweetText,
+tweetPic : x.tweetPic,
+tweetCount : x.tweetCount,
+retweetCount : x.retweetCount,
+likesCount : x.likesCount,
+viewsCount : x.viewsCount,
+TweetReplies:{
+  name:x.TweetReplies.map((y)=>y.name),
+  handlerName : x.TweetReplies.map((y)=>y.handlerName),
+  tweetReplyText: x.TweetReplies.map((y)=>y.tweetReplyText),
+}
+
+
+            }))}>
+
+
+
+             
             <div className={style2.container1}>
               <div >
               
@@ -127,8 +163,9 @@ function ProfileSection() {
 
 
             </div>
+              
           </>
-        );
+                );
       }) :<>{alert("please wait")}</>
     }
  </div>

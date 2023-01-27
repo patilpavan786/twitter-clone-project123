@@ -24,14 +24,41 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                       
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -46,14 +73,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -85,14 +138,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -106,14 +185,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -145,14 +250,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -166,14 +297,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -206,14 +363,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -227,14 +410,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -266,14 +475,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -287,14 +522,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -329,14 +590,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
@@ -350,14 +637,40 @@ export const tweetPosts = [
                 viewsCount : '102k',
                 TweetReplies : [
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
                     {
-                        name : '',
-                        handlerName : '',
-                        tweetReplyText : ''
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'ram',
+                        handlerName : 'ram@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
+                    },
+                    {
+                        name : 'sham',
+                        handlerName : 'sham@gmail.com',
+                        tweetReplyText : 'hello everyone',
+                        tweetCount : 100,
+                        retweetCount : 100 ,
+                        likesCount : 100,
+                        viewsCount : '102k',
                     },
 
                 ]
