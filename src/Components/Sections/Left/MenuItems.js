@@ -58,8 +58,8 @@ function LeftSec() {
 
             {menu.map((menu) => {
               return (
-                <div className={style.sidebar}>
-                  <div className={style.sidebarOption} key={menu.id}>
+                <div className={style.sidebar}  key={menu.id}>
+                  <div className={style.sidebarOption}>
                     <h2>{menu.icon}</h2>
                     <span>{menu.Name}</span>
                   </div>

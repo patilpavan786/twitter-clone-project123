@@ -1,6 +1,6 @@
 import React from 'react'
-import { useRecoilValue ,useSetRecoilState} from "recoil";
-import {userProfile,userTweet} from "../../../Recoil/Atom1/Atom";
+import { useRecoilValue } from "recoil";
+import {userTweet} from "../../../Recoil/Atom1/Atom";
 import { Avatar } from "@mui/material";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SyncIcon from "@mui/icons-material/Sync";
@@ -9,16 +9,11 @@ import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
 import style2 from "./Tweetpost.module.css"
-import CustomButton from '../../../Atom/Button/CustomButton';
+// import CustomButton from '../../../Atom/Button/CustomButton';
 function Tweetpost() {
 
+  
   const tweetPostData=useRecoilValue(userTweet)
-// const nameArray=(tweetPostData.TweetReplies.name)
-// const handlerNameArray=(tweetPostData.TweetReplies.handlerName)
-// const tweetReplyTextArray=(tweetPostData.TweetReplies.tweetReplyText)
-//    const k=nameArray.map((a)=>a)
-//     console.log(k)
-    
   return (
     <>
     <div className={style2.wrapper}>

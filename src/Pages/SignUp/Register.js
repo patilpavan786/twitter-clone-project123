@@ -204,6 +204,7 @@ function Register() {
                         className={style.input2}
                         placeholder="Password"
                         handleOnchange={handlePassword}
+                        type={"password"}
                       />
                       <span style={{ color: "red" }}>{passwordError}</span>
                     </div>

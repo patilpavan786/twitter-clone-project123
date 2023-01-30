@@ -15,35 +15,14 @@ import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
 import style2 from "./Unknownuser.module.css"
 
-// import {tweetPosts} from "../../../ConstData/ConstData"
+
 function ProfileSection() {
    const nevigate = useNavigate();
    const unknownProfileData=useRecoilValue(userProfile)
    const replyTweetPost=useSetRecoilState(userTweet)
    const replyProfileDetails=useSetRecoilState(userTweetProfile)
    const tweets = unknownProfileData.tweets
-   
-   const tweetsReply=unknownProfileData.tweets.TweetReplies
-   console.log(tweets )
-  //  const[newPost,setNewPost] = useRecoilState(isTweet);
-  // const[newProfile,setNewProfile] = useRecoilState(userTweet);
-  // const[post,setPost]=useState(tweetPosts)
-  // console.log(...post)
-//  useEffect(() => {
-//   fetchData()
-  
-//   },[newPost]);
 
-// function  fetchData()
-//   {
-//     setPost(tweetPosts)
-//   }
-
-//  function xyz (dataName)  {
-//     setNewProfile(dataName)
-//     nevigate("/Profile2")
-
-//   };
 
 function forReply(takeData)
 {
@@ -52,13 +31,7 @@ function forReply(takeData)
 }
   return (
     <>
-    <div className={style.wrapper}  
-    
-    // onClick={ ()=>xyz(({
-
-      
-    // } )) }
-    >
+    <div className={style.wrapper}>
       <div className={style.feed__header}>
         <p onClick={()=> nevigate("/") }><WestIcon /></p>
         <h2>{unknownProfileData.name}</h2>
@@ -92,11 +65,7 @@ function forReply(takeData)
           <>
           
             <div key={x.id}>
-     
-
             <div className={style2.wrapper} onClick={()=>forReply(({
-
-
 name:unknownProfileData.name,
 id:x.id,
 tweetText : x.tweetText,
@@ -114,9 +83,6 @@ TweetReplies:{
 
             }))}>
 
-
-
-             
             <div className={style2.container1}>
               <div >
               

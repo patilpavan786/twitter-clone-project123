@@ -20,6 +20,12 @@ export default function TwitterPost() {
   const nevigate = useNavigate();
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
   const[newProfile,setNewProfile] = useRecoilState(userProfile);
+  const [likesCount, setLikesCount] = useState(1000);
+
+  function handleLike() {
+    setLikesCount(1001);
+  }
+
  useEffect(() => {
   fetchData()
   
@@ -92,9 +98,8 @@ function  fetchData()
                     <SyncIcon />
                   </span>
                   <span>
-                    {data.likesCount}
-                    <FavoriteBorderIcon />
-                  </span>
+                  <button style={{border:'none',background:'none',color:' rgb(102, 102, 192)'}} 
+                  onClick={handleLike}><FavoriteBorderIcon />{likesCount}</button>                  </span>
                   <span>
                     {data.viewsCount}
                     <PollIcon />
