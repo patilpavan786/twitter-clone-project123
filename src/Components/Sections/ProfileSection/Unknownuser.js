@@ -1,9 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect } from "react";
+
 import style from "./ProfileSection.module.css";
 // import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import WestIcon from "@mui/icons-material/West";
 import CustomButton from "../../../Atom/Button/CustomButton";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useParams} from "react-router-dom";
 import {userProfile,userTweet,userTweetProfile} from "../../../Recoil/Atom1/Atom";
 import { useRecoilValue ,useSetRecoilState} from "recoil";
 import { Avatar } from "@mui/material";
@@ -17,6 +18,7 @@ import style2 from "./Unknownuser.module.css"
 
 
 function ProfileSection() {
+  const uid = useParams()
    const nevigate = useNavigate();
    const unknownProfileData=useRecoilValue(userProfile)
    const replyTweetPost=useSetRecoilState(userTweet)

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaTwitter } from "react-icons/fa";
 import { FaHouseUser, FaHashtag, FaNotification } from "react-icons/fa";
-import { GrNotification } from "react-icons/gr";
+// import { GrNotification } from "react-icons/gr";
 import { BsBookmark, BsPerson } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbFileText } from "react-icons/tb";
@@ -56,10 +56,10 @@ function LeftSec() {
               <p onClick={()=> nevigate("/") }> <FaTwitter /></p>
             </div>
 
-            {menu.map((menu) => {
+            {menu.map((menu,index) => {
               return (
-                <div className={style.sidebar}  key={menu.id}>
-                  <div className={style.sidebarOption}>
+                <div className={style.sidebar} key={index}>
+                  <div className={style.sidebarOption} >
                     <h2>{menu.icon}</h2>
                     <span>{menu.Name}</span>
                   </div>
@@ -75,7 +75,6 @@ function LeftSec() {
               <Dialog
                 open={isOpen}
                 onClose={handleClose}
-                // bodyStyle={{ margin: 0, padding: 0 }}
                 style={{
                   background: "rgba(91, 112, 131, 0.4)",
                   fontSize: "15px",
@@ -91,11 +90,11 @@ function LeftSec() {
               picture={
                 <Avatar
                   alt="Remy Sharp"
-                  src="https://tinypng.com/images/social/website.jpg"
+                  src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 />
               }
-              text={Data.Name}
-              text2={Data.Email}
+              text={Data?.Name}
+              text2={Data?.Email}
               button={handleOpen}
               customCss={style.button2}
             />
