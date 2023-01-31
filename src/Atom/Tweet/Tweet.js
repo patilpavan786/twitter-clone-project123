@@ -12,6 +12,7 @@ import { isTweetPost } from "../../Recoil/Atom1/Atom";
 import { Avatar } from "antd";
 
 function Tweet() {
+  let Data = JSON.parse(localStorage.getItem("user0"));
   const [isOpen, setIsOpen] = useState(false);
   const [image, setImage] = useState("");
 
@@ -41,7 +42,7 @@ function Tweet() {
     let reader = new FileReader();
     reader.onload = (e) => {
       setImage(e.target.result);
-      inputRef.current = null;
+      
     };
     reader.readAsDataURL(e.target.files[0]);
   }
@@ -49,8 +50,8 @@ function Tweet() {
     setIsOpen(true);
 
     let newObj = {
-      name: "Profile Name",
-      handlerName: "@Profile Handler",
+      name: Data.Name,
+      handlerName: Data.Email,
       organization: "United States government organization",
       tweetText: storeArray,
       tweetPic: image,
@@ -67,6 +68,7 @@ function Tweet() {
 
     setForTrue(forTrue + 1);
     setLoginStatus(loginStatus + 1);
+    inputRef.current.value=""
     
   }
 

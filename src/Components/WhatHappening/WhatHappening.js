@@ -11,10 +11,9 @@ import { useRecoilState } from "recoil";
 import { isTweetPost } from "../../Recoil/Atom1/Atom";
 
 function WhatHappening() {
-  // const [isOpen, setIsOpen] = useState(false);
+  let Data = JSON.parse(localStorage.getItem("user0"));
   const [image, setImage] = useState("");
   const [storeArray, setStoreArray] = useState("");
-  // const[forTrue,setForTrue]=useState(0)
   const [loginStatus, setLoginStatus] = useRecoilState(isTweetPost);
   const inputRef = useRef(null);
 
@@ -42,14 +41,14 @@ function WhatHappening() {
     let reader = new FileReader();
     reader.onload = (e) => {
       setImage(e.target.result);
-      inputRef.current = null;
+    
     };
     reader.readAsDataURL(e.target.files[0]);
   }
   function handleNewTweet() {
     let newObj = {
-      name: "Profile Name",
-      handlerName: "@Profile Handler",
+      name: Data.Name,
+      handlerName: Data.Email,
       organization: "United States government organization",
       tweetText: storeArray,
       tweetPic: image,
@@ -63,10 +62,10 @@ function WhatHappening() {
     };
 
     tweetPosts.unshift(newObj);
-    // console.log(tweetPosts)
-    // setForTrue(forTrue+1)
     setLoginStatus(loginStatus + 1);
     setImage("");
+    setStoreArray("");
+    inputRef.current.value=""
   }
 
   return (

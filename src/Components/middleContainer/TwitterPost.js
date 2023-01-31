@@ -20,10 +20,17 @@ export default function TwitterPost() {
   const nevigate = useNavigate();
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
   const[newProfile,setNewProfile] = useRecoilState(userProfile);
+
   const [likesCount, setLikesCount] = useState(1000);
-  const [Count, setCount] = useState(true);
+  const [icon, setIcon] = useState("blue");
+
   function handleLike() {
-   Count ? setLikesCount(10001): setLikesCount(1000)
+   likesCount===1000 ? setLikesCount(1001): setLikesCount(1000)
+  if(likesCount===1000){
+    setIcon("red")
+  }else{
+    setIcon("blue")
+  }
   }
 
  useEffect(() => {
@@ -89,23 +96,28 @@ function  fetchData()
               />
             </div>
             <div className={style.icons}>
-                  <span>
+                  <div className={style.icons}>
                     {data.tweetCount}
                     <ChatBubbleOutlineIcon />
-                  </span>
-                  <span>
+                  </div>
+                  <div className={style.icons}>
                     {data.retweetCount}
                     <SyncIcon />
-                  </span>
-                  <span>
-                  <button style={{border:'none',background:'none',color:' rgb(102, 102, 192)'}} 
-                  onClick={handleLike}><FavoriteBorderIcon />{likesCount}</button>                  </span>
-                  <span>
+                  </div>
+                  <div  className={style.icons}>
+                  <p style={{border:'none',background:'none',color:' rgb(102, 102, 192)'}}
+                   onClick={handleLike}><FavoriteBorderIcon style={{color:icon}}/>
+                   </p>
+                   {likesCount}
+                   </div>
+                  <div className={style.icons}>
                     {data.viewsCount}
                     <PollIcon />
-                  </span>
-
+                  </div>
+                  <div>
                   <UploadIcon />
+                  </div>
+                 
                 </div>
           </div>
         );
