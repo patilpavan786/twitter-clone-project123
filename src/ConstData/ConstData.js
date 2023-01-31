@@ -5,7 +5,7 @@ export const tweetPosts = [
         handlerName : '@The White House' ,
         organization : 'United States government organization',
         tweetText : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
-        tweetPic : 'https://cdn.britannica.com/19/77419-050-7785C04B/White-House-portico-Pennsylvania-Avenue.jpg',
+        tweetPic : 'https://static.toiimg.com/imagenext/toiblogs/photo/blogs/wp-content/uploads/2016/11/4-1.jpg',
       
         tweetCount : 100,
         retweetCount : 100 ,
@@ -115,11 +115,11 @@ export const tweetPosts = [
     },
     {
         id:1,
-        name : 'Mukund',
-        handlerName : '@kumarmukund',
+        name : 'Mark',
+        handlerName : '@kumarmark',
         organization : '',
         tweetText : 'For someone to live another has to die. That is wildlife. My shot that was featured in NatGeo. Shot using @NikonIndia gear.',
-        tweetPic : 'https://i0.wp.com/crickerala.com/wp-content/uploads/2020/04/Smiling-Face-Virat-Kohli.jpg?resize=960%2C580&ssl=1' ,
+        tweetPic : 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/General_Manoj_Mukund_Naravane%2C_PVSM%2C_AVSM%2C_SM%2C_VSM%2C_ADC_takes_over_as_the_Chief_of_Army_Staff_COAS_of_the_Indian_Army.jpg/1280px-General_Manoj_Mukund_Naravane%2C_PVSM%2C_AVSM%2C_SM%2C_VSM%2C_ADC_takes_over_as_the_Chief_of_Army_Staff_COAS_of_the_Indian_Army.jpg' ,
         tweetCount : 200,
         retweetCount : 200 ,
         likesCount : 200,

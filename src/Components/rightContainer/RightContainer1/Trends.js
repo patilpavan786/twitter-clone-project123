@@ -72,7 +72,7 @@ const Trends = () => {
         <div className={style.keyword__heading}>
           <h4 className={style.heading4}>What's happening</h4>
         </div>
-        {isNotIntrested.map((keyword) => {
+        {trending.map((keyword) => {
           return (
             <div
               className={style.container}

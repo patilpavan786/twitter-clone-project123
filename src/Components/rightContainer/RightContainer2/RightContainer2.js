@@ -5,8 +5,10 @@ import CustomButton from "../../../Atom/Button/CustomButton";
 import VerifiedIcon from '@mui/icons-material/Verified';
 
 function Righthomebox2() {
+  const [ show , setShow]= useState(false)
  
   const [followContainer, setFollowContainer] = useState([
+    
     {
       id: 1,
       tag: <i class="far fa-solid fa-badge-check"></i>,
@@ -35,8 +37,22 @@ function Righthomebox2() {
       text: "virat",
       text2: "virat@gmail.com",
     },
+    {
+      id: 5,
+      tag: <i class="fa fa-solid fa-badge-check"></i>,
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjj_oz7crwHtUQj0jJuvLq-ILk5oikP_3FFL-mDJqk&s",
+      text: "mahi",
+      text2: "virat@gmail.com",
+    },
+    {
+      id: 6,
+      tag: <i class="fa fa-solid fa-badge-check"></i>,
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjj_oz7crwHtUQj0jJuvLq-ILk5oikP_3FFL-mDJqk&s",
+      text: "virat",
+      text2: "virat@gmail.com",
+    },
   ]);
-  const [trending , setTrendings] = useState(followContainer.slice(0,2))
+  const [trending , setTrendings] = useState(followContainer.slice(0,4))
   const [isShowingAllTrendings , setIsShowingAllTrendings] = useState(false)
 
   const handleClick = (id) => {
@@ -55,7 +71,7 @@ function Righthomebox2() {
   function handleRequestSeeAll () {
       setIsShowingAllTrendings(!isShowingAllTrendings)
       if(isShowingAllTrendings) {
-         return setTrendings(followContainer.slice(0,2))
+         return setTrendings(followContainer.slice(0,4))
       }
       setTrendings(followContainer)
   }
@@ -63,7 +79,7 @@ function Righthomebox2() {
     <div className={style.container}>
       <h1>Who to follow</h1>
       <div className={style.main}>
-        {followContainer.map((menu) => {
+        {trending.map((menu) => {
           return (
             <div className={style.wrapper}>
               <Avatar alt="Remy Sharp" src={menu.src} />

@@ -21,9 +21,9 @@ export default function TwitterPost() {
   const[newPost,setNewPost] = useRecoilState(isTweetPost);
   const[newProfile,setNewProfile] = useRecoilState(userProfile);
   const [likesCount, setLikesCount] = useState(1000);
-
+  const [Count, setCount] = useState(true);
   function handleLike() {
-    setLikesCount(1001);
+   Count ? setLikesCount(10001): setLikesCount(1000)
   }
 
  useEffect(() => {
