@@ -67,7 +67,7 @@ function WhatHappening() {
     setImage("");
     setStoreArray("");
     inputRef.current.value=""
-    setPersonal(newObj)
+    setPersonal([...personal,newObj])
   }
 
   return (

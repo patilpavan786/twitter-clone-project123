@@ -70,7 +70,7 @@ function Tweet() {
     setForTrue(forTrue + 1);
     setLoginStatus(loginStatus + 1);
     inputRef.current.value=""
-    setPersonal(newObj)
+    setPersonal([...personal,newObj])
     
   }
 
