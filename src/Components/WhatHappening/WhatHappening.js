@@ -8,13 +8,14 @@ import CustomButton from "../../Atom/Button/CustomButton";
 import { tweetPosts } from "../../ConstData/ConstData";
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
-import { isTweetPost } from "../../Recoil/Atom1/Atom";
+import { isTweetPost,Personaltweet } from "../../Recoil/Atom1/Atom";
 
 function WhatHappening() {
   let Data = JSON.parse(localStorage.getItem("user0"));
   const [image, setImage] = useState("");
   const [storeArray, setStoreArray] = useState("");
   const [loginStatus, setLoginStatus] = useRecoilState(isTweetPost);
+  const [personal, setPersonal ] = useRecoilState(Personaltweet);
   const inputRef = useRef(null);
 
   const Icons = [
@@ -29,7 +30,7 @@ function WhatHappening() {
   function takeTweet(e) {
     setStoreArray(e.target.value);
   }
-  // function to triiger picking image imput
+  // function to triiger picking image input
   function handleOnClickIcon(action) {
     if (action === "pickImage") {
       inputRef.current.click();
@@ -66,6 +67,7 @@ function WhatHappening() {
     setImage("");
     setStoreArray("");
     inputRef.current.value=""
+    setPersonal(newObj)
   }
 
   return (

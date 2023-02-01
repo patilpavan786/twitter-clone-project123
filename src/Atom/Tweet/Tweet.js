@@ -8,11 +8,12 @@ import CustomButton from "../Button/CustomButton";
 import ConstData from "../../ConstData/ConstData";
 import { tweetPosts } from "../../ConstData/ConstData";
 import { useRecoilState } from "recoil";
-import { isTweetPost } from "../../Recoil/Atom1/Atom";
+import { isTweetPost ,Personaltweet} from "../../Recoil/Atom1/Atom";
 import { Avatar } from "antd";
 
 function Tweet() {
   let Data = JSON.parse(localStorage.getItem("user0"));
+  const [personal, setPersonal ] = useRecoilState(Personaltweet);
   const [isOpen, setIsOpen] = useState(false);
   const [image, setImage] = useState("");
 
@@ -69,6 +70,7 @@ function Tweet() {
     setForTrue(forTrue + 1);
     setLoginStatus(loginStatus + 1);
     inputRef.current.value=""
+    setPersonal(newObj)
     
   }
 

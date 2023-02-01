@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./ProfileSection.module.css";
-
+import UserTweet from "./UserTweet/UserTweet";
 import WestIcon from "@mui/icons-material/West";
 import CustomButton from "../../../Atom/Button/CustomButton";
 import { useNavigate } from "react-router-dom";
@@ -38,6 +38,7 @@ function ProfileSection() {
         <h5>likesCount :- 154 likes</h5>
       </div>
     </div>
+    <UserTweet />
    
     </>
   );

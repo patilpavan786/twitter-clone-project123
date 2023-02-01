@@ -24,6 +24,16 @@ function ProfileSection() {
    const replyTweetPost=useSetRecoilState(userTweet)
    const replyProfileDetails=useSetRecoilState(userTweetProfile)
    const tweets = unknownProfileData.tweets
+   const [likesCount, setLikesCount] = useState(1000);
+   const [icon, setIcon] = useState("blue");
+ 
+   function handleLike() {
+    likesCount===1000 ? setLikesCount(1001): setLikesCount(1000)
+   if(likesCount===1000){
+     setIcon("red")
+   }else{
+     setIcon("blue")
+   }}
 
 
 function forReply(takeData)
@@ -50,8 +60,8 @@ function forReply(takeData)
         </span>
       </div>
      <div className={style.textcontaint}>
-        <h4>{`${"Name:-"}${unknownProfileData.name}`}</h4>
-        <h5>{`${"@"}${unknownProfileData.handlerName}`}</h5>
+        <h4>{`Name:- ${unknownProfileData.name}`}</h4>
+        <h5>{`${unknownProfileData.handlerName}`}</h5>
         <h5>{`${"tweetCount:-"}${unknownProfileData.tweetCount}`}</h5>
         <h5>{`${"likescount:-"}${unknownProfileData.likesCount}`}</h5>
         <h5>{`${"followers:-"}${unknownProfileData.followers}`}</h5>

@@ -33,3 +33,8 @@ export const userTweetProfile = atom({
   key: "userTweetProfile",
   default: {},
 });
+
+export const Personaltweet = atom({
+  key: "Personaltweet",
+  default: [],
+});

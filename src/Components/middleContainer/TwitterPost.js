@@ -30,8 +30,7 @@ export default function TwitterPost() {
     setIcon("red")
   }else{
     setIcon("blue")
-  }
-  }
+  }}
 
  useEffect(() => {
   fetchData()
