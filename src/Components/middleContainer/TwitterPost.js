@@ -10,12 +10,13 @@ import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import { useState, useEffect } from "react";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import Dialog from "@mui/material/Dialog";
 import {
   isTweetPost,
   userProfile,
   requestedProfileAtom,
+  forPassingId
 } from "../../Recoil/Atom1/Atom";
 import { Navigate, useNavigate } from "react-router-dom";
 import { tweetPosts } from "../../ConstData/ConstData";
@@ -26,11 +27,14 @@ export default function TwitterPost() {
   const nevigate = useNavigate();
   const[countForRender, setCountForRender]=useState(0)
   const [newPost, setNewPost] = useRecoilState(isTweetPost);
+  const setId=useSetRecoilState(forPassingId);
+  const[indexForD,setIndexForD]=useState()
   const [newProfile, setNewProfile] = useRecoilState(userProfile);
-  const [likesCount, setLikesCount] = useState(1000);
+ // const [likesCount, setLikesCount] = useState(1000);
   const [requestedProfile, setRequestedProfile] = useState("");
   const [icon, setIcon] = useState("rgb(77, 75, 75)");
   const [isOpen, SetisOpen] = useState(false);
+  const[count,setCount]=useState(0)
   // const setRequestedProfile = useRecoilState(requestedProfileAtom)
 
   function handleLike(takeLikes) {
@@ -67,13 +71,29 @@ export default function TwitterPost() {
 
   function xyz(dataName) {
     setNewProfile(dataName);
-    nevigate("/Profile2");
+    const paramsValue = dataName.handlerName.replace("@", "");
+    nevigate(`/profile2/${paramsValue}`);
+    setId(dataName.index)
   }
   const handleClose = () => {
-    SetisOpen(false);
-  };
-  const handleClickOpen = () => {
-    SetisOpen(true);
+    post[indexForD].isOpen=false
+    setCount(count-1)
+
+  }
+  useEffect(()=>{handleClickOpen},[count])
+  
+  
+  const handleClickOpen = (index) => {
+ 
+    post[index].isOpen=true
+    
+   //console.log(post[index].id)
+  // console.log(index)
+   setId(index);
+   setCount(count+1)
+   setIndexForD(index)
+
+
   };
 
   return (
@@ -98,6 +118,7 @@ export default function TwitterPost() {
                     followers: data.followers,
                     followings: data.followings,
                     tweets: data.tweets,
+                    index:i
                   })
                 }
               >
@@ -117,6 +138,7 @@ export default function TwitterPost() {
             </div>
 
             <div className={style.img}>
+              {data.tweetPic ? 
               <img
                 style={{
                   width: "30rem",
@@ -125,15 +147,16 @@ export default function TwitterPost() {
                 }}
                 alt="picture"
                 src={data.tweetPic}
-              />
+              /> : <></> }
             </div>
             <div className={style.icons}>
               <div className={style.icons}>
                 {data.tweetCount}
-                <ChatBubbleOutlineIcon onClick={handleClickOpen} />
+                <ChatBubbleOutlineIcon onClick={(()=>handleClickOpen(i))} />
                 <div className={style.Dialog}>
+                  {console.log(data.isOpen)}
               <Dialog
-                open={isOpen}
+                open={data.isOpen}
                 onClose={handleClose}
                 style={{
                   background: "rgba(91, 112, 131, 0.4)",

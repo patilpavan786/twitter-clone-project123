@@ -28,7 +28,7 @@ function LeftSec() {
     { id: 4, icon: <HiOutlineMail />, Name: "Message" },
     { id: 5, icon: <BsBookmark />, Name: "Bookmarks" },
     { id: 6, icon: <TbFileText />, Name: "Lists" },
-    { id: 7, icon: <BsPerson />, Name: <p onClick={()=> nevigate("/Profile") }>Profile</p> },
+    { id: 7, icon: <BsPerson />, Name: <p onClick={()=> nevigate( `/Profile/${paramsValue}`) }>Profile</p> },
     { id: 8, icon: <CgMoreO />, Name: "More" },
   ];
   const [isOpen, SetisOpen] = useState(false);
@@ -45,7 +45,7 @@ function LeftSec() {
   const handleClickClose = () => {
     setOpen(false);
   };
-
+  let paramsValue=Data.Name
   return (
     <>
       <div className={style.container}>

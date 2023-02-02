@@ -8,6 +8,7 @@ import CustomButton from "../../Atom/Button/CustomButton";
 import { tweetPosts } from "../../ConstData/ConstData";
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
+
 import { isTweetPost,Personaltweet } from "../../Recoil/Atom1/Atom";
 
 function WhatHappening() {
@@ -17,6 +18,7 @@ function WhatHappening() {
   const [loginStatus, setLoginStatus] = useRecoilState(isTweetPost);
   const [personal, setPersonal ] = useRecoilState(Personaltweet);
   const inputRef = useRef(null);
+  const disabled=(!storeArray)
 
   const Icons = [
     { id: 0, icon: <FaGlobe /> },
@@ -111,6 +113,7 @@ function WhatHappening() {
             </div>
           </div>
           <CustomButton
+          disable={disabled}
             buttonText="Tweet"
             btnNext={handleNewTweet}
             customCss={style.button}

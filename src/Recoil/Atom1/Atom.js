@@ -48,3 +48,10 @@ export const Tweetreply = atom({
   key: "Tweetreply",
   default: {},
 });
+
+
+export const forPassingId = atom({
+  key: "Passid",
+  default:1,
+});
+
