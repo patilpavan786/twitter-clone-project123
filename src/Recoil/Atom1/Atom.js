@@ -38,3 +38,13 @@ export const Personaltweet = atom({
   key: "Personaltweet",
   default: [],
 });
+
+export const isTweetreply = atom({
+  key: "isTweetreply",
+  default: 0,
+});
+
+export const Tweetreply = atom({
+  key: "Tweetreply",
+  default: {},
+});

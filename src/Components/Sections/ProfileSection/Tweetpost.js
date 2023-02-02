@@ -9,6 +9,7 @@ import PollIcon from "@mui/icons-material/Poll";
 import UploadIcon from "@mui/icons-material/Upload";
 import VerifiedIcon from '@mui/icons-material/Verified';
 import style2 from "./Tweetpost.module.css"
+// import TweetReply from '../../../Atom/TweetReply/TweetReply';
 // import CustomButton from '../../../Atom/Button/CustomButton';
 function Tweetpost() {
 
@@ -62,6 +63,7 @@ function Tweetpost() {
   
     </div>
 <div className={style2.wrapper}>
+
 <div className={style2.container1}>
               <div >
                 <Avatar   className={style2.avatar} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Elon_Musk_2015.jpg/408px-Elon_Musk_2015.jpg" />
