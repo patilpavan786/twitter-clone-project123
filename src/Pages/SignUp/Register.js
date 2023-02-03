@@ -145,9 +145,13 @@ function Register() {
       }
     }
 
-    if (flag == 1 && flagForLs == 0) {
-      localStorage.setItem("user" + incl, JSON.stringify(Data));
-      setIncl(incl + 1);
+    if (flag == 1 && flagForLs == 0)
+     {
+
+      data.push(Data)
+      setData([...data])
+      localStorage.setItem("user" + incl, JSON.stringify(data));
+      // setIncl(incl + 1);
       alert("USER Sucessfully Registered");
       setLoginStatus(true);
       // window.location.assign("/");

@@ -84,18 +84,18 @@ textarea::-webkit-scrollbar{
   background-color: #0E4D77;
   width: 5rem;
   color: #e6ecf0;
-  padding: 0.6rem 0.6rem;
+  padding: 0.6rem 1rem;
   border-radius: 30px;
   margin: 2.5rem;
-  margin-left: 82%;
+  margin-left: 45%;
 font-weight: 500;
 text-align: center;
   min-height:1.9rem;
   cursor: pointer;
   font-size: 1rem;
-  
+  border: none;
+  outline: none;
 }
-
 .bottom .icons {
   display: inline-flex;
   

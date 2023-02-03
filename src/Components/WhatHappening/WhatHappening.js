@@ -110,14 +110,15 @@ function WhatHappening() {
                   </div>
                 );
               })}
-            </div>
-          </div>
-          <CustomButton
+                 <CustomButton
           disable={disabled}
             buttonText="Tweet"
             btnNext={handleNewTweet}
             customCss={style.button}
           />
+            </div>
+          </div>
+        
         </div>
         {/* hidden input */}
         <input
